@@ -4,10 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio Informatique</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <nav class="side-menu">
+    <ul>
+      <li><a href="#" data-target="about"><img src="images/information.png" alt="À propos"></a></li>
+      <li><a href="#" data-target="experimental"><img src="images/skills.png" alt="Compétences"></a></li>
+      <li><a href="mailto:galliennemathys377@gmail.com"><img src="images/contact.png" alt="Contact"></a></li>
+    </ul>
+  </nav>
 
   <header>
     <div class="title-wrapper">
@@ -21,87 +28,191 @@
     </div>
   </header>
 
-  <main>
-    <div class="floating-dots">
-      <span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span><span></span><span></span>
-    </div>
+  <main class="two-columns">
+    <div class="left-column">
+      <div id="about-block" class="content-block active">
+        <section id="aboutme">
+          <h2>À propos de moi</h2>
+          <p class="terminal">Salut ! Je m'appelle Mathys, j'ai 18 ans et je suis passionné par le développement de jeux vidéo et de logiciels...</p>
+          <p class="terminal">En tant qu'étudiant, j'ai appris à maîtriser plusieurs technologies : HTML, CSS, JavaScript, PHP, et bien plus encore.</p>
+          <p class="terminal">Je suis actuellement à la recherche d'un stage en informatique pour avril 2026. Mon objectif est de rejoindre une entreprise où je pourrai continuer à apprendre et à grandir professionnellement.</p>
+          <p class="terminal">Ce qui me motive ? Transformer des idées en réalité, résoudre des problèmes complexes et créer des expériences utilisateur mémorables.</p>
+        </section>
+        <section id="projects">
+          <h2>Mes projets</h2>
+          <div class="projects-list">
+            <div class="project">
+              <h3>Morpion en JavaFX</h3>
+              <p>Un morpion moderne conçu en JavaFX et à l'aide de SceneBuilder.</p>
+              <div class="carousel" id="morpion-carousel">
+                <div class="carousel-track">
+                  <img src="images/morpion1.png" alt="Morpion">
+                  <img src="images/morpion2.png" alt="Morpion">
+                  <img src="images/morpion3.png" alt="Morpion">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+              </div>
+            </div>
 
-    <section id="research">
-      <h2>Ma recherche</h2>
-      <p>Je suis actuellement à la recherche d'un stage en développement web pour mettre en pratique mes compétences et apprendre de nouvelles technologies.</p>
-    </section>
-
-    <section id="skills">
-      <h2>Mes savoir-être et savoir-faire</h2>
-      <ul>
-        <li>Travail en équipe et communication</li>
-        <li>Autonomie et organisation</li>
-        <li>Maîtrise des langages HTML, CSS, JavaScript</li>
-        <li>Connaissance des frameworks React et Vue.js</li>
-        <li>Gestion de bases de données SQL et NoSQL</li>
-      </ul>
-    </section>
-
-    <section id="strengths-weaknesses">
-      <h2>Points forts / Points faibles</h2>
-      <ul>
-        <li><strong>Points forts :</strong> Curiosité, rigueur, adaptabilité</li>
-        <li><strong>Points faibles :</strong> Impatience face à certaines erreurs, perfectionnisme</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Mes projets</h2>
-      <div class="projects-list">
-        <div class="project">
-          <h3>Projet 1 - Portfolio</h3>
-          <p>Un portfolio moderne conçu en HTML, CSS, et JavaScript.</p>
-          <a href="#" target="_blank">Voir le projet</a>
-        </div>
-        <div class="project">
-          <h3>Projet 2 - App Todo</h3>
-          <p>Application de gestion de tâches avec React et Firebase.</p>
-          <a href="#" target="_blank">Voir le projet</a>
-        </div>
+            <div class="project">
+              <h3>Fangame Pokémon</h3>
+              <p>Jeu réalisé sur RPG Maker XP à l'aide d'algorithmes</p>
+              <div class="carousel" id="jeu-carousel">
+                <div class="carousel-track">
+                  <img src="images/jeu1.png" alt="Jeu">
+                  <img src="images/jeu2.png" alt="Jeu">
+                  <img src="images/jeu3.png" alt="Jeu">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+
+      <div id="experimental-block" class="content-block">
+        <section id="projects">
+          <h2>Mes compétences</h2>
+          <div class="projects-list-3">
+            <div class="project">
+              <a><img src="images/java.png" alt="Java"></a>
+              <h3>Languages de programmation</h3>
+              <p>~ Java, JavaFX, C, C#, PHP ~</p>
+            </div>
+            <div class="project">
+              <a><img src="images/devweb.png" alt="HTML"></a>
+              <h3>Languages de développement web</h3>
+              <p>~ HTML, CSS ~</p>
+            </div>
+            <div class="project">
+              <a><img src="images/langue.png" alt="Talk"></a>
+              <h3>Langues étrangères parlées</h3>
+              <p>~ Anglais, Espagnol ~</p>
+            </div>
+            <div class="project">
+              <a><img src="images/sql.png" alt="SQL"></a>
+              <h3>Manipulation de base de données</h3>
+              <p>~ SQL (MySQL, MSSQL) ~</p>
+            </div>
+            <div class="project">
+              <a><img src="images/log.png" alt="Logiciel"></a>
+              <h3>Logiciels utilisés</h3>
+              <p>~ Github, Eclipse, Intellij, VSCode, XAMPP, VSCode, LibreOffice ~</p>
+            </div>
+            <div class="project">
+              <a><img src="images/com.png" alt="Communication"></a>
+              <h3>Compétences en travail de groupe</h3>
+              <p>~ Gestion de livrables, communication en groupe ~</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>Contactez-moi : <a href="mailto:ton.email@example.com">ton.email@example.com</a></p>
-  </footer>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
 
   <script>
-    document.querySelectorAll('.rotating-traits span').forEach((trait, i) => {
-      const maxTop = 120 - 4;
-      const randomTop = Math.random() * maxTop;
-      trait.style.top = `${randomTop}px`;
-      trait.style.animationDelay = `${i * 0.07}s`;
-    });
+    document.addEventListener('DOMContentLoaded', () => {
+      const cursorDot = document.querySelector(".cursor-dot");
+      const cursorOutline = document.querySelector(".cursor-outline");
 
-    document.querySelectorAll('.floating-dots span').forEach((dot, i) => {
-        const maxTop = window.innerHeight - 6;
-        const randomTop = Math.random() * maxTop;
+      window.addEventListener("mousemove", (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        cursorDot.style.left = cursorOutline.style.left = x + "px";
+        cursorDot.style.top = cursorOutline.style.top = y + "px";
 
-        const randomLeftStart = -20 - Math.random() * 80;
-        const randomDuration = 2 + Math.random() * 5;
-        const randomDelay = Math.random() * 5;
+        const trail = document.createElement("div");
+        trail.classList.add("trail");
+        trail.style.left = `${x}px`;
+        trail.style.top = `${y}px`;
+        document.body.appendChild(trail);
+        setTimeout(() => trail.remove(), 400);
+      });
 
-        const randomSize = 3 + Math.random() * 4;
-        const randomOpacity = 0.3 + Math.random() * 0.7;
+      document.querySelectorAll('.rotating-traits span').forEach((trait, i) => {
+        trait.style.top = Math.random() * 116 + "px";
+        trait.style.animationDelay = (i * 0.07) + "s";
+      });
 
-        dot.style.top = `${randomTop}px`;
-        dot.style.left = `${randomLeftStart}px`;
-        dot.style.width = `${randomSize}px`;
-        dot.style.height = `${randomSize}px`;
-        dot.style.opacity = `${randomOpacity}`;
-        dot.style.animationDuration = `${randomDuration}s`;
-        dot.style.animationDelay = `${randomDelay}s`;
-    });
+      document.querySelectorAll('.floating-dots span').forEach((dot) => {
+        dot.style.top = Math.random() * (window.innerHeight - 6) + "px";
+        dot.style.left = -20 - Math.random() * 80 + "px";
+        dot.style.width = dot.style.height = (3 + Math.random() * 4) + "px";
+        dot.style.opacity = 0.3 + Math.random() * 0.7;
+        dot.style.animationDuration = (2 + Math.random() * 5) + "s";
+        dot.style.animationDelay = Math.random() * 5 + "s";
+      });
 
+      const links = document.querySelectorAll('.side-menu a[data-target]');
+      const aboutBlock = document.getElementById('about-block');
+      const experimentalBlock = document.getElementById('experimental-block');
+
+      document.querySelectorAll('.side-menu a[data-target]').forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const target = link.dataset.target;
+
+          if(target === "about" && !aboutBlock.classList.contains('active')){
+            aboutBlock.classList.add('slide-in-right');
+            experimentalBlock.classList.add('slide-out-left');
+
+            setTimeout(() => {
+              aboutBlock.classList.add('active');
+              aboutBlock.classList.remove('slide-in-right');
+              experimentalBlock.classList.remove('active', 'slide-out-left');
+            }, 600);
+          }
+
+          if(target === "experimental" && !experimentalBlock.classList.contains('active')){
+            experimentalBlock.classList.add('slide-in-right');
+            aboutBlock.classList.add('slide-out-left');
+
+            setTimeout(() => {
+              experimentalBlock.classList.add('active');
+              experimentalBlock.classList.remove('slide-in-right');
+              aboutBlock.classList.remove('active', 'slide-out-left');
+            }, 600);
+          }
+        });
+      });
+    })
+
+    function initCarousel(carouselId) {
+      const carousel = document.getElementById(carouselId);
+      const track = carousel.querySelector('.carousel-track');
+      const images = track.querySelectorAll('img');
+      const prev = carousel.querySelector('.prev');
+      const next = carousel.querySelector('.next');
+      let index = 0;
+
+      function updateSlider() {
+        const width = images[0].clientWidth;
+        track.style.transform = `translateX(-${index * width}px)`;
+      }
+
+      prev.addEventListener('click', () => {
+        index = (index - 1 + images.length) % images.length;
+        updateSlider();
+      });
+
+      next.addEventListener('click', () => {
+        index = (index + 1) % images.length;
+        updateSlider();
+      });
+
+      window.addEventListener('resize', updateSlider);
+
+      updateSlider();
+    }
+
+    initCarousel('morpion-carousel');
+    initCarousel('jeu-carousel');
   </script>
-</body>
+
+  </body>
 </html>
